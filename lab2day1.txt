@@ -1,0 +1,327 @@
+sorig@DESKTOP-F21SUVR MINGW64 ~
+$ git clone https://github.com/sorigabit/Sorin.git
+Cloning into 'Sorin'...
+warning: You appear to have cloned an empty repository.
+
+sorig@DESKTOP-F21SUVR MINGW64 ~
+$ git clone https://github.com/sorigabit/IronSorin.git
+Cloning into 'IronSorin'...
+warning: You appear to have cloned an empty repository.
+
+sorig@DESKTOP-F21SUVR MINGW64 ~
+$ touch about.txt
+
+sorig@DESKTOP-F21SUVR MINGW64 ~
+$ echo "this is a fun fact about me" >> about.txt
+
+sorig@DESKTOP-F21SUVR MINGW64 ~
+$ git commit about.txt
+fatal: not a git repository (or any of the parent directories): .git
+
+sorig@DESKTOP-F21SUVR MINGW64 ~
+$ git add --all
+fatal: not a git repository (or any of the parent directories): .git
+
+sorig@DESKTOP-F21SUVR MINGW64 ~
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+sorig@DESKTOP-F21SUVR MINGW64 ~
+$ IronSorin add -all
+bash: IronSorin: command not found
+
+sorig@DESKTOP-F21SUVR MINGW64 ~
+$ git add -all
+fatal: not a git repository (or any of the parent directories): .git
+
+sorig@DESKTOP-F21SUVR MINGW64 ~
+$ ls
+ 1_variables_operators.ipynb
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Dinamo/
+ Documents/
+ Downloads/
+ Favorites/
+ IH-Labs/
+ IntelGraphicsProfiles/
+ IronSorin/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT{8db2f70f-46bb-11eb-ae78-a497b188c11e}.TM.blf
+ NTUSER.DAT{8db2f70f-46bb-11eb-ae78-a497b188c11e}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{8db2f70f-46bb-11eb-ae78-a497b188c11e}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Sorin/
+'Start Menu'@
+ Templates@
+ Tracing/
+ Untitled.ipynb
+ Untitled1.ipynb
+ Untitled10.ipynb
+ Untitled11.ipynb
+ Untitled12.ipynb
+ Untitled13.ipynb
+ Untitled14.ipynb
+ Untitled15.ipynb
+ Untitled16.ipynb
+ Untitled17.ipynb
+ Untitled18.ipynb
+ Untitled19.ipynb
+ Untitled2.ipynb
+ Untitled20.ipynb
+ Untitled21.ipynb
+ Untitled22.ipynb
+ Untitled23.ipynb
+ Untitled24.ipynb
+ Untitled25.ipynb
+ Untitled26.ipynb
+ Untitled27.ipynb
+ Untitled28.ipynb
+ Untitled29.ipynb
+ Untitled3.ipynb
+ Untitled30.ipynb
+ Untitled31.ipynb
+ Untitled32.ipynb
+ Untitled33.ipynb
+ Untitled34.ipynb
+ Untitled35.ipynb
+ Untitled36.ipynb
+ Untitled37.ipynb
+ Untitled38.ipynb
+ Untitled39.ipynb
+ Untitled4-Copy1.ipynb
+ Untitled4-Copy2.ipynb
+ Untitled4.ipynb
+ Untitled40.ipynb
+ Untitled5.ipynb
+ Untitled6.ipynb
+ Untitled7.ipynb
+ Untitled8.ipynb
+ Untitled9.ipynb
+ Videos/
+ about.txt
+ anaconda3/
+ get-pip.py*
+ ntuser.dat
+ ntuser.dat.log1
+ ntuser.dat.log2
+ ntuser.dat{1d3611e6-41b6-11ee-aec1-ce5bcaf64bcc}.TM.blf
+ ntuser.dat{1d3611e6-41b6-11ee-aec1-ce5bcaf64bcc}.TMContainer00000000000000000001.regtrans-ms
+ ntuser.dat{1d3611e6-41b6-11ee-aec1-ce5bcaf64bcc}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.dat{69d11c5c-41bd-11ee-aec1-a497b188c11e}.TM.blf
+ ntuser.dat{69d11c5c-41bd-11ee-aec1-a497b188c11e}.TMContainer00000000000000000001.regtrans-ms
+ ntuser.dat{69d11c5c-41bd-11ee-aec1-a497b188c11e}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+
+sorig@DESKTOP-F21SUVR MINGW64 ~
+$ cp about.txt IronSorin
+
+sorig@DESKTOP-F21SUVR MINGW64 ~
+$ git commit -m "First commit"
+fatal: not a git repository (or any of the parent directories): .git
+
+sorig@DESKTOP-F21SUVR MINGW64 ~
+$ cd IronSorin
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ git commit -m "First Commit"
+On branch main
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        about.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ ls
+about.txt
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ git add--
+git: 'add--' is not a git command. See 'git --help'.
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ git add .
+warning: in the working copy of 'about.txt', LF will be replaced by CRLF the next time Git touches it
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ git add.
+git: 'add.' is not a git command. See 'git --help'.
+
+The most similar command is
+        add
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ git add --
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ git add .
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ git push
+error: src refspec refs/heads/main does not match any
+error: failed to push some refs to 'https://github.com/sorigabit/IronSorin.git'
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ git push IronSorin
+error: src refspec refs/heads/main does not match any
+error: failed to push some refs to 'IronSorin'
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ git push IronSorin origin master
+error: src refspec origin does not match any
+error: src refspec master does not match any
+error: failed to push some refs to 'IronSorin'
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/sorigabit/IronSorin.git'
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/sorigabit/IronSorin.git'
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ git push
+error: src refspec refs/heads/main does not match any
+error: failed to push some refs to 'https://github.com/sorigabit/IronSorin.git'
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/sorigabit/IronSorin.git'
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ ^C
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ ls
+about.txt
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ git commit -m 'First commit'
+[main (root-commit) 5d7bd2f] First commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 about.txt
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ git push origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 235 bytes | 235.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sorigabit/IronSorin.git
+ * [new branch]      main -> main
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ git clone https://github.com/sorigabit/IronSritoma.git
+Cloning into 'IronSritoma'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 2), reused 6 (delta 2), pack-reused 0
+Receiving objects: 100% (6/6), done.
+Resolving deltas: 100% (2/2), done.
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ ls
+IronSritoma/  about.txt
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ cd IronSritome
+bash: cd: IronSritome: No such file or directory
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ cd IronSritoma
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin/IronSritoma (main)
+$ ls
+about.txt
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin/IronSritoma (main)
+$ touch sorin.txt
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin/IronSritoma (main)
+$ cd..
+bash: cd..: command not found
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin/IronSritoma (main)
+$ cd..
+bash: cd..: command not found
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin/IronSritoma (main)
+$ cd
+
+sorig@DESKTOP-F21SUVR MINGW64 ~
+$ cd IronSorin
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ ls
+IronSritoma/  about.txt
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin (main)
+$ cd IronSritoma
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin/IronSritoma (main)
+$ ls
+about.txt  sorin.txt
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin/IronSritoma (main)
+$ ^[[200~$ IronHack
+bash: $'\E[200~$': command not found
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin/IronSritoma (main)
+$ echo "I enrolled in Ironhack's Data Analytics bootcamp data analytics is great" >> sorin.txt
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin/IronSritoma (main)
+$ git add .
+warning: in the working copy of 'sorin.txt', LF will be replaced by CRLF the next time Git touches it
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin/IronSritoma (main)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin/IronSritoma (main)
+$ git commit -m 'Added the sorin txt file'
+[main 6453133] Added the sorin txt file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sorin.txt
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin/IronSritoma (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 341 bytes | 341.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/sorigabit/IronSritoma.git
+   32ecd9c..6453133  main -> main
+
+sorig@DESKTOP-F21SUVR MINGW64 ~/IronSorin/IronSritoma (main)
